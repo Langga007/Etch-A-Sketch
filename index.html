@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <title>Etch-A-Sketch</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Etch-A-Sketch</h1>
+
+    <div class="flex-container">
+      <div class="select-paintboard">
+        <div class="selectBtn">
+          <select name="grid-size" id="Hello" onchange="selectGrid(this.value)">
+            <option > - Select Option - </option>
+            <option value="5">Extra Small (5x5)</option>
+            <option value="10">Small (10x10)</option>
+            <option value="20">Medium (20x20)</option>
+            <option value="40">Large (40x40)</option>
+          </select>
+          <button onclick="reset()">Reset</button>
+        </div>
+        <div class="paint-board">
+          <div class="rows">
+            <div id="black" class="color"></div>
+            <div id="red" class="color"></div>
+            <div id="blue" class="color"></div>
+            <div id="yellow" class="color"></div>
+            <div id="green" class="color"></div>
+          </div>
+          <div class="rows">
+            <div id="white" class="color"></div>
+            <div id="violet" class="color"></div>
+            <div id="orange" class="color"></div>
+            <div id="grey" class="color"></div>
+            <div id="brown" class="color"></div>
+          </div>
+        </div>
+   
+      </div>
+      <div id="board">
+      </div>
+    </div>
+    </div>
+  
+</body>
+  <script src="./main.js"></script>
+</html>

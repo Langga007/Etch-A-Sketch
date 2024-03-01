@@ -1,0 +1,138 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  margin: 15px;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#board{
+  display: grid;
+  width: 650px;
+  height: 650px;
+  border: 1px solid black;
+}
+
+/* #board > div {
+  background-color: blue;
+} */
+
+.color{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.rows{
+  display: flex;
+  flex-direction: column;
+}
+
+.select-paintboard{
+  position: fixed;
+  left: 0;
+  margin-top: 50px;
+  margin-left: 10%;
+  padding: 25px;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.paint-board{
+  background-color: beige;
+  box-shadow: 0 2px 4px 6px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: row;
+  padding: 25px;  
+  margin-top: 25px ;
+}
+
+/* COLORS  */
+#black{
+  background-color:  black;
+}
+
+#red{
+  background-color:  red;
+}
+
+#blue{
+  background-color:  blue;
+}
+
+#yellow{
+  background-color:  yellow;
+}
+
+#green{
+  background-color:  green;
+}
+
+#white{
+  background-color:  white;
+}
+
+#violet{
+  background-color:  violet;
+}
+
+#orange{
+  background-color:  orange;
+}
+
+#grey{
+  background-color:  grey;
+}
+
+#brown{
+  background-color:  brown;
+}
+
+select{
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.color:hover{
+  opacity: 70%;
+}
+
+button{
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fa2929;
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c20000;
+}
